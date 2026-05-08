@@ -1,0 +1,40 @@
+May 08, 2026 11:17:35 AM top.archiem.projects.LoginSystem loadSettings
+INFO: Loaded settings from settings.properties
+May 08, 2026 11:17:35 AM top.archiem.projects.LoginSystem loadAccountsFromCSV
+INFO: No accounts file found. Starting with empty accounts.
+May 08, 2026 11:17:35 AM top.archiem.projects.LoginSystem main
+INFO: Login system initialized.
+May 08, 2026 11:17:35 AM top.archiem.projects.LoginSystem logIn
+INFO: No accounts found, creating initial admin account.
+May 08, 2026 11:18:04 AM top.archiem.projects.LoginSystem createAccount
+INFO: Created account: bob (admin)
+May 08, 2026 11:18:09 AM top.archiem.projects.LoginSystem logIn
+WARNING: Invalid login attempt for user: bob
+May 08, 2026 11:18:12 AM top.archiem.projects.LoginSystem logIn
+WARNING: Invalid login attempt for user: bob
+May 08, 2026 11:18:15 AM top.archiem.projects.LoginSystem logIn
+WARNING: Invalid login attempt for user: bob
+May 08, 2026 11:18:17 AM top.archiem.projects.LoginSystem logIn
+WARNING: Invalid login attempt for user: bob
+May 08, 2026 11:18:19 AM top.archiem.projects.LoginSystem logIn
+WARNING: Invalid login attempt for user: bob
+May 08, 2026 11:18:19 AM top.archiem.projects.LoginSystem saveLockedAccounts
+INFO: Saved 1 active lockouts to lockouts.txt
+May 08, 2026 11:18:19 AM top.archiem.projects.LoginSystem lockAccount
+INFO: Account locked: bob for 14 minute(s)
+May 08, 2026 11:18:37 AM top.archiem.projects.LoginSystem loadSettings
+INFO: Loaded settings from settings.properties
+May 08, 2026 11:18:37 AM top.archiem.projects.LoginSystem loadAdminsFromTxt
+INFO: Loaded admins successfully.
+May 08, 2026 11:18:37 AM top.archiem.projects.LoginSystem main
+INFO: Login system initialized.
+May 08, 2026 11:18:40 AM top.archiem.projects.LoginSystem isAccountLocked
+WARNING: Login attempt on locked account: bob
+May 08, 2026 11:20:09 AM top.archiem.projects.LoginSystem loadSettings
+INFO: Loaded settings from settings.properties
+May 08, 2026 11:20:09 AM top.archiem.projects.LoginSystem loadAdminsFromTxt
+INFO: Loaded admins successfully.
+May 08, 2026 11:20:09 AM top.archiem.projects.LoginSystem main
+INFO: Login system initialized.
+May 08, 2026 11:20:18 AM top.archiem.projects.LoginSystem isAccountLocked
+WARNING: Login attempt on locked account: bob
