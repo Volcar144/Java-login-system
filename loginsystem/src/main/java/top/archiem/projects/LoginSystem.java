@@ -1,3 +1,9 @@
+/**
+ * Main class for the login system program
+    Copyright (C) 2026  DanngDev/Volcar144
+ */
+
+
 package top.archiem.projects;
 
 import java.io.BufferedReader;
@@ -87,6 +93,13 @@ public class LoginSystem {
     private static String lockoutsFile = DEFAULT_LOCKOUTS_FILE;
     private static String logFile = DEFAULT_LOG_FILE;
     private static boolean loggerInitialized = false;
+
+    private static final String licenseBanner = """
+            Java Login System  Copyright (C) 2026  DanngDev/Volcar144
+            This program comes with ABSOLUTELY NO WARRANTY; for details, see the license agreement.
+            This is free software, and you are welcome to redistribute it
+            under certain conditions; see the license agreement for details.
+            """;
 
     /**
      * Load settings from the properties file, creating a copy of the default
@@ -315,6 +328,7 @@ public class LoginSystem {
         loadAccountsFromCSV(accounts);
         loadAdminsFromTxt(admins);
         LOGGER.info("Login system initialized.");
+        out.println(licenseBanner);
 
         out.println("Welcome to the access portal!");
 
@@ -880,7 +894,7 @@ public class LoginSystem {
             tempUsr = readLine("Username: ");
             if(isAccountLocked(tempUsr)){
                 out.print("This account is currently locked. Please wait or contact an admin to get it unlocked.");
-                return "";
+                System.exit(0);
             }
             String tempPass = readLine("Password: ");
             String hashedTempPass = hashPassword(tempPass);
